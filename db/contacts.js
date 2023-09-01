@@ -16,7 +16,6 @@ export async function getContactById(contactId) {
   const contact = contacts.find(item => item.id === contactId);
   return contact || null;
 }
-
 export async function addContact(name, email, phone) {
   const contact = await listContacts();
   const addNewContact = {
